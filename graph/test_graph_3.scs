@@ -1,0 +1,65 @@
+undirected_graph -> graph3;;
+graph3 -> rrel_arcs: ..arcs;;
+graph3 -> rrel_nodes: ..nodes;;
+
+..nodes -> A;;
+..nodes -> B;;
+..nodes -> C;;
+..nodes -> D;;
+..nodes -> E;;
+..nodes -> L;;
+..nodes -> M;;
+..nodes -> F;;
+..nodes -> P;;
+..nodes -> U;;
+..nodes -> Y;;
+..nodes -> Q;;
+..nodes -> W;;
+..nodes -> O;;
+..nodes -> P;;
+
+
+..arcs -> (A <=> B);;
+..arcs -> (B <=> A);;
+
+..arcs -> (B <=> C);;
+..arcs -> (C <=> D);;
+
+..arcs -> (B <=> P);;
+..arcs -> (P <=> B);;
+
+..arcs -> (B <=> D);;
+..arcs -> (D <=> B);;
+
+..arcs -> (P <=> U);;
+..arcs -> (U <=> P);;
+
+..arcs -> (U <=> Y);;
+..arcs -> (Y <=> U);;
+
+..arcs -> (Y <=> Q);;
+..arcs -> (Q <=> Y);;
+
+..arcs -> (Q <=> W);;
+..arcs -> (W <=> Q);;
+
+..arcs -> (W <=> O);;
+..arcs -> (O <=> W);;
+
+..arcs -> (O <=> P);;
+..arcs -> (P <=> O);;
+
+..arcs -> (D <=> E);;
+..arcs -> (E <=> D);;
+
+..arcs -> (E <=> F);;
+..arcs -> (F <=> E);;
+
+..arcs -> (F <=> M);;
+..arcs -> (M <=> F);;
+
+..arcs -> (M <=> L);;
+..arcs -> (L <=> M);;
+
+..arcs -> (L <=> E);;
+..arcs -> (E <=> L);;

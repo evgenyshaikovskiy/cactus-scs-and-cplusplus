@@ -1,0 +1,17 @@
+undirected_graph -> graph4;;
+graph4 -> rrel_arcs: ..arcs;;
+graph4 -> rrel_nodes: ..nodes;;
+
+..nodes -> A;;
+..nodes -> B;;
+..nodes -> C;;
+..nodes -> D;;
+
+..arcs -> (A <=> B);;
+..arcs -> (B <=> A);;
+
+..arcs -> (B <=> C);;
+..arcs -> (C <=> B);;
+
+..arcs -> (C <=> D);;
+..arcs -> (D <=> C);;
