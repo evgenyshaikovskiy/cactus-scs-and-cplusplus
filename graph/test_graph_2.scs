@@ -18,43 +18,29 @@ graph2 -> rrel_nodes: ..nodes;;
 
 
 ..arcs -> (A <=> U);;
-..arcs -> (U <=> A);;
 
 ..arcs -> (U <=> S);;
-..arcs -> (S <=> U);;
 
 ..arcs -> (U <=> Y);;
-..arcs -> (Y <=> U);;
 
 ..arcs -> (Y <=> E);;
-..arcs -> (E <=> Y);;
 
 ..arcs -> (E <=> A);;
-..arcs -> (A <=> E);;
 
 ..arcs -> (A <=> D);;
-..arcs -> (D <=> A);;
 
 ..arcs -> (D <=> F);;
-..arcs -> (F <=> D);;
 
 ..arcs -> (F <=> G);;
-..arcs -> (G <=> F);;
 
 ..arcs -> (G <=> H);;
-..arcs -> (H <=> G);;
 
 ..arcs -> (E <=> R);;
-..arcs -> (R <=> E);;
 
 ..arcs -> (R <=> T);;
-..arcs -> (T <=> R);;
 
 ..arcs -> (E <=> W);;
-..arcs -> (W <=> E);;
 
 ..arcs -> (W <=> Q);;
-..arcs -> (Q <=> W);;
 
 ..arcs -> (H <=> F);;
-..arcs -> (F <=> H);;

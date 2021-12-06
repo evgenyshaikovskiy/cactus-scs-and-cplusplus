@@ -10,22 +10,15 @@ graph5 -> rrel_nodes: ..nodes;;
 ..nodes -> F;;
 
 ..arcs -> (A <=> B);;
-..arcs -> (B <=> A);;
 
 ..arcs -> (D <=> C);;
-..arcs -> (C <=> D);;
 
 ..arcs -> (B <=> C);;
-..arcs -> (C <=> B);;
 
 ..arcs -> (D <=> F);;
-..arcs -> (F <=> D);;
 
 ..arcs -> (F <=> L);;
-..arcs -> (L <=> F);;
 
 ..arcs -> (L <=> C);;
-..arcs -> (C <=> L);;
 
 ..arcs -> (A <=> D);;
-..arcs -> (D <=> A);;

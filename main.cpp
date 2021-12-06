@@ -127,44 +127,35 @@ void dfs(const std::unique_ptr<ScMemoryContext>& context, ScAddr vertex, ScAddr 
         }
 
         cycles.push_back(local_cycle);
-//        std::cout << "CYCLE!!!" << std::endl;
+        currentPath.pop_back();
         return;
     }
 
     visited_once.push_back(vertex);
 
-//    std::cout << "CURRENTLY AT ";
-//    print_element(context, vertex);
-//    std::cout << std::endl;
-
     ScIterator5Ptr next_node = context->Iterator5(vertex, ScType::Const, ScType(0), ScType::Const , arcs);
     ScAddr node;
-
-//    std::cout << "PARENT VERTEX IS ";
-//    print_element(context, parent);
-//    std::cout << std::endl;
 
     while (next_node->Next())
     {
         node = next_node->Get(2);
 
-//        std::cout << "GETTING NODES THROUGH ITERATOR ";
-//        print_element(context, node);
-//        std::cout << std::endl;
-
         if (!is_in_list(visited_twice, node) && parent != node)
         {
-//            std::cout << "MOVING TO NODE ";
-//            print_element(context, node);
-//            std::cout << std::endl;
-
             dfs(context, node, vertex, arcs);
         }
     }
 
-//    std::cout << "FINISHED WITH NODE ";
-//    print_element(context, vertex);
-//    std::cout << std::endl;
+    next_node = context->Iterator5(ScType(0), ScType::Const, vertex, ScType::Const, arcs);
+    while (next_node->Next())
+    {
+        node = next_node->Get(0);
+
+        if (!is_in_list(visited_twice, node) && parent != node)
+        {
+            dfs(context, node, vertex, arcs);
+        }
+    }
 
     currentPath.pop_back();
     visited_twice.push_back(vertex);

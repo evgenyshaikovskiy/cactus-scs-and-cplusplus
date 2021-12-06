@@ -8,10 +8,7 @@ graph4 -> rrel_nodes: ..nodes;;
 ..nodes -> D;;
 
 ..arcs -> (A <=> B);;
-..arcs -> (B <=> A);;
 
 ..arcs -> (B <=> C);;
-..arcs -> (C <=> B);;
 
 ..arcs -> (C <=> D);;
-..arcs -> (D <=> C);;
